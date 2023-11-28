@@ -1,5 +1,7 @@
 CREATE DATABASE IF NOT EXISTS dblocker;
 
+ALTER DATABASE dblocker DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
 USE dblocker;
 
 CREATE TABLE armario (
@@ -391,4 +393,3 @@ INSERT INTO armario (secao, numero, local, andar, situacao) VALUES
 ('B', 20, 'corredor química', 'inferior', 'indisponível');
 
 INSERT INTO `funcionario` (`id`, `cpf`, `email`, `senha`, `nome`, `sobrenome`, `funcao`, `privilegio`) VALUES (NULL, '12345678900', 'teste1@gmail.com', '12345678', 'Admin', 'teste', 'Administrador', 'Todos');
- #kek
