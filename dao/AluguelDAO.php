@@ -307,9 +307,11 @@ class AluguelDAO {
                 $list[] = $this->tableListGeral($row);
 
             }
-
-
+            if(!isset($list)){
+                //echo "nao há nada";
+            }else{
             return $list;
+            }
 
         } catch (Exception $e) {
 
